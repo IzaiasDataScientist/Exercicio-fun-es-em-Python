@@ -6,12 +6,12 @@ from triangulo_15 import formam_um_triangulo, tipos_triangulo
 class MyTestCase(unittest.TestCase):
     def setUp(self):
         self.triangulo = tipos_triangulo(23, 23, 23)
-        self.forma_triangulo = formam_um_triangulo(3, 23, 5)
+        self.forma_triangulo = formam_um_triangulo(23, 23, 23)
         print('setUp() sendo executado...')
 
     def test_forma_triangulo(self):
         #self.forma_triangulo = formam_um_triangulo(3, 23, 5)
-        self.assertEqual(self.forma_triangulo, True)
+        self.assertTrue(self.forma_triangulo, True)
 
     def test_triangulo_equilatero(self):
         self.assertEqual(self.triangulo, 'Triangulo equilatero')
