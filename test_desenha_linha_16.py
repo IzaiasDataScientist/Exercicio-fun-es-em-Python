@@ -1,6 +1,6 @@
 import unittest
 
-from desenha_linha import desenha_linha
+from desenha_linha_16 import desenha_linha
 
 
 class MyTestCase(unittest.TestCase):
